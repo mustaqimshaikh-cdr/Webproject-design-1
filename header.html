@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Header</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.445);
+}
+nav{
+    display: flex;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 100px;
+}
+.li-1{
+    list-style-type: none;
+    padding: 10px 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.li-1:hover{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+h1{
+    padding-left: 10px;
+}
+.s-1{
+    background-image: url("img_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    padding: 280px 50px;
+    color: white;
+}
+.s-1 h1{
+    font-family: Ubuntu,sans-serif;
+    font-weight: 700;
+    font-size: 3.75rem;
+    /* margin: -170px 0px 0 0; */
+    margin-top: -150px;
+    width: 561px;
+}
+.s-1 p{
+    font-size: 1.125rem;
+    width: 461px;
+    margin: 10px 10px;
+}
+.email-div{
+    background-color: #ffffffc9;
+    width: 491px;
+    margin: 20px 10px;
+    padding: 20px 10px;
+}
+.email-div form{
+    display: flex;
+    align-items: center;
+}
+.email-div form input{
+    width: 350px;
+    padding: 15px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    outline: none;
+}
+.btn-1-div{
+    background-color: #876cc4;
+    padding: 12px 12px;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+.btn-1-div:hover{
+    background-color: #8260d3;
+}
+.btn-1-div a{
+    text-decoration-line: none;
+    /* background-color: #ffffff; */
+    color: white;
+}
+.p-1 a{
+    text-decoration-line: none;
+    color: #f8ba33;
+    font-weight: 700;
+}
+.contact-1{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.ph-1{
+    background-color: #f8ba33;
+    font-size: 2.8rem;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+.ph-2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.s-2{
+    /* background-image: url("img_1.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;     */
+    padding: 100px 50px;
+    color: white;
+    display: flex;    
+}
+.main-icon{
+ display: flex;
+ justify-content: space-between;
+ gap: 100px; 
+ margin-left: 130px;
+ opacity: 0.6;  
+}
+.s-3{
+    padding: 100px 50px;
+    color: white;
+    display: flex;
+}
+    
+</style>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <!-- <img src="" alt=""> -->
+        <nav>
+            <ul>
+                <li class="li-1">Store</li>
+                <li class="li-1">Cart</li>
+                <li class="li-1">Checkout</li>
+                <li class="li-1">My Account</li>
+            </ul>
+        </nav>
+    </header>  
+    <section class="s-1" id="home">
+                 <div>
+                    <h1> Digital product marketing agency</h1>
+                    <p class="p-1">Delectus recteque has ne, no pro tation commodo. Ea libris utamur vix, in sumo augue soluta vis.
+                        Image from <a href="#">Freepik</a>
+                        </p>
+                        <div class="email-div">
+                            <form action="">
+                                <input type="email" name="" id="" placeholder="Enter a Valid Email Address">
+                                <div class="btn-1-div"><a href="#">SUBMIT</a></div>
+                            </form>
+                        </div>
+                        <div class="contact-1">
+                            <li class="ph-1"><i class='bx bx-phone-call' ></i></li>
+                            <li class="ph-2">+1 (234) 567-8910</li>
+                        </div>
+                        <p>Info@Sample.com</p>
+                 </div>
+    </section>
+    <section class="s-2" id="brand">
+        <div class="main-icon">
+            <div class="icon"><img src="img_2.png" alt=""></div>
+            <div><img src="img_3.png" alt=""></div>
+            <div><img src="img_6.png" alt=""></div>
+            <div><img src="img_4.png" alt=""></div>
+            <div><img src="img_5.png" alt=""></div>
+
+        </div>
+    </section> 
+    <section class="s-3">
+      <div>
+        <div">
+        <img src="img_7.png" alt="" height="485px">
+        <p style="color: black;font-size: 1.3rem;text-align:center;align-items: center;font-family:'Open Sans',sans-serif;width: 380px;padding-left: 30px;">Sample text. Click to Image from the Text Element. </p>
+      </div>
+      </div>
+    </section>
+</body>
+</html>
